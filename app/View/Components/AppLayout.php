@@ -7,6 +7,11 @@ use Illuminate\View\View;
 
 class AppLayout extends Component
 {
+
+    public function __construct(public string $metaTitle = 'Default Title', public string $metaDescription = 'Default Descriptiom')
+    {
+
+    }
     /**
      * Get the view / contents that represents the component.
      */
